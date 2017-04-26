@@ -1,4 +1,11 @@
 <html>
+<head>
+<style>
+  dt{
+    margin-top:1.5em;
+  }
+</style>
+</head>
 <body>
 <h1>この文章について</h1>
 <h2>これは何か</h2>
@@ -321,6 +328,21 @@ Civ4ArtDefines_Unit.xmlの ART_DEF_UNIT_LION(ライオン以外の挙動は未調査)の&lt;NIF
 Art/Units/alicia/alicia2.nifに変えると・・・
 </p>
 <p>(ちょっと大きいですが)MMDモデルがライオンとしてシド星に現れました(画像略)！Enjoy!</p>
+
+<h1>エラー出るんだけど</h1>
+<p>ここにあるエラーは手順を飛ばしてエラーになる場合なので、たぶん直せばうまくいきます。</p>
+
+<dl class="errors">
+<dt>ValueError: not enough values to unpack (expected 4, got 1)<br>
+    nif_ver_dec_1, nif_ver_dec_2, nif_ver_dec_3, nif_ver_dec_4 = dec_split</dt>
+<dd>バージョンを入れてないかも。</dd>
+
+<dt>AttributeError: 'Key' object has no attribute 'ipo'</dt>
+<dd>Shapeを消し忘れていませんか？</dd>
+
+<dt>AttributeError: 'TextureHelper' object has no attribute 'warning'</dt>
+<dd>出力オプションを間違えている可能性があります。とくにいちど出力に成功しないかぎり設定は保存されませんので、失敗したらまたオプションを設定しなおしてください。</dd>
+</dl>
 
 <h1></h1>
 <p>元の版を書いた人: @gforest_shade</p>
