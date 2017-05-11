@@ -3,7 +3,7 @@
 <meta charset="UTF-8">
 <style>
   small{
-    color: 999;
+    color: #999999;
   }
   dt{
     margin-top:1.5em;
@@ -12,7 +12,7 @@
     margin: 10px;
     padding: 15px;
     word-break:break-all;
-    box-shadow:4px 4px 4px rgba(0,0,0,0.05);
+    box-shadow:4px 4px 4px rgba(0,0,0,0.4);
     width:800px;
     background:#ffdddd;
   }
@@ -20,7 +20,7 @@
     margin: 10px;
     padding: 15px;
     word-break:break-all;
-    box-shadow:4px 4px 4px rgba(0,0,0,0.05);
+    box-shadow:4px 4px 4px rgba(0,0,0,0.4);
     width:800px;
     background:#ddddff;
   }
@@ -94,16 +94,16 @@ BtSのモデルそのままではどうもうまくImportできないので、
 <p>
   NifSkope上である程度お膳立てが必要です。
 </p>
-<a href="nifskope0.png"><object type="image/png" width="450" height="400" data="nifskope0.png"></object></a>
+<a href="img/nifskope0.png"><object type="image/png" width="450" height="400" data="img/nifskope0.png"></object></a>
 <p>
 各NiTriShapeについて、選択状態であれば強調表示されますので
 大体どの部位を表しているのか名前をつけておきましょう。<br>
 目視ではわからなくても適当で構いません。日本語文字化け+連番のままですと後々どれがどれだかわからなくなって困るので、今のうちに準備しておくことが目的です。
 </p>
 <p>ベースモデルを一緒に開きます。</p>
-<a href="nifskope1.png"><object type="image/png" width="900" height="400" data="nifskope1.png">alt</object></a>
+<a href="img/nifskope1.png"><object type="image/png" width="900" height="400" data="img/nifskope1.png">alt</object></a>
 <p>ここのNiNodeをCopy Branchして、</p>
-<a href="nifskope2.png"><object type="image/png" width="900" height="400" data="nifskope2.png">alt</object></a>
+<a href="img/nifskope2.png"><object type="image/png" width="900" height="400" data="img/nifskope2.png">alt</object></a>
 <p>
   ここのNiNodeにPaste Branchします。<br>
   これだけだと大きさがあっていないので足元に小さく布都が見えていますが、気にしないことにして、これでNifSkope上の準備は終わりです。
@@ -114,21 +114,21 @@ BtSのモデルそのままではどうもうまくImportできないので、
 Blender2.49b(以下単にBlender)を起動すると、いつもの立方体が写っています。[X]で消してしまいます。(以下キーボード操作をこのように表記します。慣例に従って大文字で表記しますが、キーボードの刻印通りにキーを１回押すという意味です)<br>
 まず画面を整えましょう。
 </p>
-<a href="blender_aplit_area.png"><object type="image/png" width="960" height="500" data="blender_split_area.png"></object></a>
+<a href="img/blender_aplit_area.png"><object type="image/png" width="960" height="500" data="img/blender_split_area.png"></object></a>
 <p>境界を右クリックしてSplit Area</p>
-<a href="blender_aplit_area2.png"><object type="image/png" width="960" height="500" data="blender_split_area2.png"></object></a>
+<a href="img/blender_aplit_area2.png"><object type="image/png" width="960" height="500" data="img/blender_split_area2.png"></object></a>
 <p>左クリックで確定します。</p>
-<a href="blender_outliner.png"><object type="image/png" width="960" height="500" data="blender_outliner.png"></object></a>
+<a href="img/blender_outliner.png"><object type="image/png" width="960" height="500" data="img/blender_outliner.png"></object></a>
 <p>Window TypeをOutlinerに変更します。</p>
 </p>
 
 <h1>BlenderにNifを取り込む</h1>
-<a href="blender_import_nif.png"><object type="image/png" width="960" height="500" data="blender_import_nif.png"></object></a>
+<a href="img/blender_import_nif.png"><object type="image/png" width="960" height="500" data="img/blender_import_nif.png"></object></a>
 <p>
   nifファイルをインポートします。<br>
   ファイル名を選択します。
 </p>
-<a href="blender_import_nif2.png"><object type="image/png" width="960" height="500" data="blender_import_nif2.png"></object></a>
+<a href="img/blender_import_nif2.png"><object type="image/png" width="960" height="500" data="img/blender_import_nif2.png"></object></a>
 <p>
   オプションはこんな感じです。<br>
   とくに、
@@ -139,11 +139,9 @@ Blender2.49b(以下単にBlender)を起動すると、いつもの立方体が�
 <li>Send Geometries To Bind Position: on
 <li>Send Detached Geometries To Node Position: on
 <li>Send Bones To Bind Position: on
-<p>
-を入れておくとよいと思います。
-<a href="blender_scale.png"><object type="image/png" width="960" height="500" data="blender_scale.png"></object></a>
-こんな感じになっていればOKです。
-</p>
+<p>を入れておくとよいと思います。</p>
+<a href="img/blender_scale.png"><object type="image/png" width="960" height="500" data="img/blender_scale.png"></object></a>
+<p>こんな感じになっていればOKです。</p>
 <h1>Blender基本操作</h1>
 <p>この節ではBlender2.49bについて長々と説明しています。</p>
 <h2>ウィンドウ</h2>
@@ -201,7 +199,7 @@ Blender2.49bはマウスカーソルが乗っているウィンドウが自動�
 
 <dt>Mode: モード</dt>
 <dd>
-<a href="blender_scale.png"><object type="image/png" width="960" height="500" data="blender_scale.png"></object></a>
+<a href="img/blender_scale.png"><object type="image/png" width="960" height="500" data="img/blender_scale.png"></object></a>
   画像の青の部分で切り替えます。何を選択しているかによって入れるモードが違うので注意しましょう。
 </dd>  
 
@@ -216,40 +214,43 @@ Blender2.49bはマウスカーソルが乗っているウィンドウが自動�
 
 <dt>Draw Type: 描画タイプ</dt>
 <dd>
-<a href="blender_scale.png"><object type="image/png" width="960" height="500" data="blender_scale.png"></object></a>
+<a href="img/blender_scale.png"><object type="image/png" width="960" height="500" data="img/blender_scale.png"></object></a><br>
   画像の緑の部分で切り替えます。こちらは表示の仕方、あるいはいろんな要素がある3Dモデルの中で何を重視して表示するか、を切り替えます。
 </dd>
 
 <dt>Solid</dt>
 <dd>
-<a href="blender_solid.png"><object type="image/png" width="960" height="500" data="blender_solid.png"></object></a>
+<a href="img/blender_solid.png"><object type="image/png" width="960" height="500" data="img/blender_solid.png"></object></a><br>
   デフォルトはこのタイプです。張られている面をそのまま表示します。面そのものだけを表示するので、その面に貼られる画像は描画されませんが、その分形状を把握するのに向いています。この章での主力です。
 </dd>  
 
 <dt>Textured</dt>
 <dd>
-<a href="blender_textured.png"><object type="image/png" width="960" height="500" data="blender_textured.png"></object></a>
+<a href="img/blender_textured.png"><object type="image/png" width="960" height="500" data="img/blender_textured.png"></object></a><br>
   面に画像を貼った状態で表示されます。実際のゲームの表示と近いので、仕上げの調整に使えるかもしれません。細かい形状を把握するのに向いていないので、あまりこの章では出番がありません。
 </dd>  
 
 <dt>Wireframe</dt>
 <dd>
-<a href="blender_wireframe.png"><object type="image/png" width="960" height="500" data="blender_wireframe.png"></object></a>
+<a href="img/blender_wireframe.png"><object type="image/png" width="960" height="500" data="img/blender_wireframe.png"></object></a><br>
   面を取り払って、辺と頂点だけを表示します。余計なものがないので、細かく操作をするのに向いているほか、面がないので、solidでは面の後ろに隠れて見えないうしろ側の頂点のことも気にした編集ができる利点があります。
 </dd>
 
 <dt></dt>
 
 <h1>位置合わせ</h1>
+
+<a href="img/blender_scale.png"><object type="image/png" width="960" height="500" data="img/blender_scale.png"></object></a>
 <p>
-<a href="blender_scale.png"><object type="image/png" width="960" height="500" data="blender_scale.png"></object></a>
   さて、デフォルトではモードはObject Modeです。この図のように、布都の分のMeshを全部選択した状態にします。(Outlinerでやるほうがやりやすいと思います)<br>
   [S](Scale:大きさ)を押します。拡大縮小しているのが分かります。このような動かしている途中の状態では、左クリックで確定、右クリックでキャンセルになります。<small>なかなかややこしいです。</small>だいたい重なるように大きさを合わせてください。この時点では大体で構いません。肩のあたりが重なるような感じでよいです。<br>
-  妖精にはいったん退いておいてもらいます。妖精の方のMeshを全部選択して、
-<a href="blender_grab.png"><object type="image/png" width="960" height="500" data="blender_grab.png"></object></a>
+妖精にはいったん退いておいてもらいます。妖精の方のMeshを全部選択して、
+</p>
+<a href="img/blender_grab.png"><object type="image/png" width="960" height="500" data="img/blender_grab.png"></object></a>
+<p>
   [G](Grab/move:つかむ/移動)を押します。移動していくのが分かります。左クリックで確定、右クリックでキャンセルです。右上の方へ、さらに[Num3]の視点移動から奥の方に行かせます。
 </p>
-<a href="blender_armature_view.png"><object type="image/png" width="960" height="500" data="blender_armature_view.png"></object></a>
+<a href="img/blender_armature_view.png"><object type="image/png" width="960" height="500" data="img/blender_armature_view.png"></object></a>
 <p>
   Armatureの表示を調整します。Armatureを選択して、Buttons PanelをEditingに切り替えます。<br>
   "Armature"のタブで、X-Ray(Armatureを常に最前面に表示)・Envelope(筆者はこの形が一番見やすいと思いましたが、OctahedronやStickなどを試してもいいと思います)・Names(Bone名を表示、超捗る)をオンにしておきます。<br>
@@ -264,12 +265,12 @@ Blender2.49bはマウスカーソルが乗っているウィンドウが自動�
   再び布都のMeshをすべて選択して、できたら次にArmatureを選択して(この例だとSoundを右クリックするのがやりやすかったです・<strong>またArmatureを選択するのは最後でなければいけません、注意</strong>)、<br>
   Ctrl+[P]を押します。
 </p>
-<a href="jma_blender_parentto.png"><object type="image/png" width="960" height="500" data="jma_blender_parentto.png"></object></a>
+<a href="img/jma_blender_parentto.png"><object type="image/png" width="960" height="500" data="img/jma_blender_parentto.png"></object></a>
 <p>Armatureを選択します。</p>
-<a href="jma_blender_nameg.png"><object type="image/png" width="960" height="500" data="jma_blender_nameg.png"></object></a>
+<a href="img/jma_blender_nameg.png"><object type="image/png" width="960" height="500" data="img/jma_blender_nameg.png"></object></a>
 <p>Name Groupsを選択します。しつこく何回も聞いてくるので、しつこく何回もName Groupsを選びます。</p>
 <p>Meshがどこかに行ってしまいました。中ボタンドラッグで視点を回転して見てみると、</p>
-<a href="jma_blender_shita.png"><object type="image/png" width="960" height="500" data="jma_blender_shita.png"></object></a>
+<a href="img/jma_blender_shita.png"><object type="image/png" width="960" height="500" data="img/jma_blender_shita.png"></object></a>
 <p>
   下を向いてしまったようです。改めて布都のMeshを選択して(そのままだとArmatureも選択してしまっています、Armatureの選択を外してください)、<br>
   [R][x][-90]の順に入力すると、x軸(赤軸)を回転軸として-90°回転されて立ち上がってくれます。
@@ -284,7 +285,7 @@ Blender2.49bはマウスカーソルが乗っているウィンドウが自動�
   そのMeshに属する頂点がすべて黄色く選択された状態になります。Edit Modeでは、ほかのMeshに属する頂点を操作することはできません。逆に、何か失敗しても影響はそのMesh内にとどまるということです。便利。<br>
   どこなのかわからない場合は、非表示を活用したり、Wireframeにしたりしてみましょう。
 </p>
-<a href="jma_blender_bselect.png"><object type="image/png" width="960" height="500" data="jma_blender_bselect.png"></object></a>
+<a href="img/jma_blender_bselect.png"><object type="image/png" width="960" height="500" data="img/jma_blender_bselect.png"></object></a>
 <p>
   例では、服やスカートのMeshを非表示にしてしまっています。<br>
   <div class="tips">Edit Modeでは、何か選択している状態で[A]で選択解除、何も選択していない状態で[A]で全選択になります。</div>
@@ -296,7 +297,7 @@ Blender2.49bはマウスカーソルが乗っているウィンドウが自動�
   もうひとつ、[B][B]と入力することで、丸型に選択する機能もあります。左ドラッグしている間、丸の中に入っているすべての頂点を選択します。中ドラッグしている間、丸の中に入っているすべての頂点を選択解除します。ホイールを回すことで、丸の大きさを自在に変えられるので、かなり便利です。<br>
   [B]や[B][B]による選択は、デフォルトで継続選択です。複数選択のためにShiftを押したままにする必要はありませんから、落ち着いて選択しましょう。また、いったん選択モードを抜けたとしても継続選択になります。視点の関係でよく見えなくなったら、落ち着いて右クリックで一度抜けて、視点を調整しましょう。
 </p>
-<a href="jma_blender_neck.png"><object type="image/png" width="960" height="500" data="jma_blender_neck.png"></object></a>
+<a href="img/jma_blender_neck.png"><object type="image/png" width="960" height="500" data="img/jma_blender_neck.png"></object></a>
 <p>
   首の頂点が選択できたら、ここのメニューからNeckを選んで、こっちのAssignを押します。
   <div class="caution">ただし、Assignやその横のRemoveを押すときはよく確認してください。とくに目的のもの以外をうっかり選択してしまっての誤Assignは修正作業で地味に面倒を引き起こしてしまいます。</div>
@@ -330,18 +331,18 @@ Blender2.49bはマウスカーソルが乗っているウィンドウが自動�
 <p>
   Armatureを選択中、Pose Modeに入れます。Pose Mode中は、Boneを個別に選択できるようになり、各Boneを[G]で動かしたり[R]で回転したりできるようになります。もちろん、肉付けされている場合は、一緒についてきます。視点を引いてfairy01も見える状態で動かしてみることで同じように動いているかどうか確認することができます。左クリックで確定、右クリックでキャンセルです。
 </p>
-<a href="jma_blender_nurinokoshi.png"><object type="image/png" width="960" height="500" data="jma_blender_nurinokoshi.png"></object></a>
+<a href="img/jma_blender_nurinokoshi.png"><object type="image/png" width="960" height="500" data="img/jma_blender_nurinokoshi.png"></object></a>
 <p>おっと！ついてくるはずの頂点がその場に居残っていますね。</p>
-<a href="jma_blender_nokoshipoint.png"><object type="image/png" width="960" height="500" data="jma_blender_nokoshipoint.png"></object></a>
+<a href="img/jma_blender_nokoshipoint.png"><object type="image/png" width="960" height="500" data="img/jma_blender_nokoshipoint.png"></object></a>
 <p>
   視点を調整してWireframeに切り替えつつ、一度左クリックで確定して、左クリックのカーソルで目印をつけておいてから<small>この章での数少ない左クリックの見せ所！</small>、Alt+[G]で移動をもとの位置に戻します。
   <div class="tips">Pose Modeでの移動は、Alt+[G]でもとに戻せる。回転は、Alt+[R]でもとに戻せる。</div>
   Edit Modeに戻って、印のところにある頂点をLleg2にAssignしました。
 </p>
-<a href="jma_blender_okleg.png"><object type="image/png" width="960" height="500" data="jma_blender_okleg.png"></object></a>
+<a href="img/jma_blender_okleg.png"><object type="image/png" width="960" height="500" data="img/jma_blender_okleg.png"></object></a>
 <p>ついてくるようになりました。</p>  
 <h2>Weight Paint Mode</h2>
-<a href="jma_blender_wp1.png"><object type="image/png" width="960" height="500" data="jma_blender_wp1.png"></object></a>
+<a href="img/jma_blender_wp1.png"><object type="image/png" width="960" height="500" data="img/jma_blender_wp1.png"></object></a>
 <p>
   Meshを選択してWeight Paintに入ると、Vertex Groupに割り当てられている部分を視覚的に見ることができます。<br>
   Vertex Groupを切り替えながら眺めれば、元モデルではどうやって塗っているかだいたいわかることでしょう。<br>
@@ -354,11 +355,11 @@ Blender2.49bはマウスカーソルが乗っているウィンドウが自動�
 <p>元がMMDモデルの場合、外から見えない部分まで作り込む目的でMeshが存在している場合があります。Texturedで確認して、完全に内側にあるようなら、Meshごと消してしまいましょう。例では、dorowaと命名したMeshは消してしまっています。</p>
 
 <h1>仕上げ</h1>
-<a href="jma_blender_deletef.png"><object type="image/png" width="960" height="500" data="jma_blender_deletef.png"></object></a>
+<a href="img/jma_blender_deletef.png"><object type="image/png" width="960" height="500" data="img/jma_blender_deletef.png"></object></a>
 <p>全部塗れたと思ったら、お世話になったベースのメッシュを[X]して、</p>
-<a href="jma_blender_nifexport.png"><object type="image/png" width="960" height="500" data="jma_blender_nifexport.png"></object></a>
+<a href="img/jma_blender_nifexport.png"><object type="image/png" width="960" height="500" data="img/jma_blender_nifexport.png"></object></a>
 <p>念のためObject Modeですべてのオブジェクトを表示状態にして[A]で全選択してから(しなくていいかも)、File-Export-NetImmerse/Gamebryo(.nif &amp; .kf &amp; .egm)から出力します。</p>
-<a href="jma_blender_nifexport2.png"><object type="image/png" width="960" height="500" data="jma_blender_nifexport2.png"></object></a>
+<a href="img/jma_blender_nifexport2.png"><object type="image/png" width="960" height="500" data="img/jma_blender_nifexport2.png"></object></a>
 <p>
   ファイル名を指定した後にオプションが出るので、こんな感じで。とくに、
   <ul>
@@ -370,17 +371,17 @@ Blender2.49bはマウスカーソルが乗っているウィンドウが自動�
   </ul>
   になっているか確認しておきましょう。
 </p>
-<a href="jma_blender_unweighted.png"><object type="image/png" width="960" height="500" data="jma_blender_unweighted.png"></object></a>
+<a href="img/jma_blender_unweighted.png"><object type="image/png" width="960" height="500" data="img/jma_blender_unweighted.png"></object></a>
 <p>まだ塗り残しがあると怒られました。塗り残している頂点が自動で選択されているので、適切に修正しましょう。(ここで塗り残しが少なければ、そのままAssignすればよいですが、Meshのなかで複数箇所にわたっていると大変なので、Assignは慎重に。)</p>
 <p>何事もなくメイン画面に戻ってこられて、指定したファイル名ができていれば成功です。それを組み込めばそのまま動きます。</p>
 <h2>最後もNifSkope</h2>
 <p>いきなりゲームで確認してもよいですが、いちおうNifSkope上でも動きを確認したいですね。</p>
-<a href="jma_nifskope_attachkf.png"><object type="image/png" width="450" height="400" data="jma_nifskope_attachkf.png"></object></a>
+<a href="img/jma_nifskope_attachkf.png"><object type="image/png" width="450" height="400" data="img/jma_nifskope_attachkf.png"></object></a>
 <p>
   ファイルを開いて、Spells-Animation-Attach.KF、fairy01で始まっているkfファイルをまとめて選択してしまいます。
   成功していれば、再生ボタンやシークバーの近くに動きの種類が表示されていますので、伸びたり捻れたりしていないかチェックできます。
 </p>
-<a href="jma_nifskope_kfm.png"><object type="image/png" width="450" height="400" data="jma_nifskope_kfm.png"></object></a>
+<a href="img/jma_nifskope_kfm.png"><object type="image/png" width="450" height="400" data="img/jma_nifskope_kfm.png"></object></a>
 <p>ファイル名を直したいなら、fairy01.kfmを開いて、KFMタブを出し、fairy01とある部分を片っ端からfutoに変えて、futo.kfmとして保存すればOKです。nifファイルや、kfファイルもその名前に合わせておくことを忘れずに。</p>
 
 <h1>あそぶ</h1>

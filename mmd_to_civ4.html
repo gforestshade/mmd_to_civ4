@@ -75,13 +75,13 @@ shadername = self.nif_export.EXTRA_SHADER_TEXTURES[shaderindex]<br>
 Blenderを起動してみましょう。
 真ん中に立方体と、ボタンがたくさん出てきます。
 </p>
-<img src="jojisi_mmd_plugin_menu.png" width="960" height="500" />
+<img src="img/jojisi_mmd_plugin_menu.png" width="960" height="500" />
 <p>
 File - User Preferences から設定画面を出して、Add-onsタブを選択、
 ここまで上手くいっていれば、検索窓に「mmd」と入れるとObject: mmd_toolsが見つかるはずなので、
 チェックボックスをオンにして有効化します。
 </p>
-<img src="jojisi_mmd_plugin_enable.png" width="816" height="518" />
+<img src="img/jojisi_mmd_plugin_enable.png" width="816" height="518" />
 
 <p>
 同じように、「nif」で検索して、Import-Export: NetImmerse/Gamebryo nif formatを有効化しておきます。
@@ -95,13 +95,13 @@ BlenderのAddonは入れただけでは有効にならず、このように明�
 この文書でも英語のメニュー名で説明するため、そのままでよいです。
 </p>
 
-<img src="jojisi_mmd_fonts.png" width="816" height="518" />
+<img src="img/jojisi_mmd_fonts.png" width="816" height="518" />
 
 <p>
 MMDタブ - Import: ModelからさっそくMMDモデルを読み込んでみます。
 </p>
 
-<img src="jojisi_mmd_input_1.png" width="960" height="500" />
+<img src="img/jojisi_mmd_input_1.png" width="960" height="500" />
 
 <p>
 インポートのオプションは
@@ -115,7 +115,7 @@ MMDタブ - Import: ModelからさっそくMMDモデルを読み込んでみま�
 にしておきます。
 </p>
 
-<img src="jojisi_mmd_input_2.png" width="960" height="500" />
+<img src="img/jojisi_mmd_input_2.png" width="960" height="500" />
 
 <p>
 ここまで上手くいっていれば、中央のビューに真っ白のモデルが出てくるはずです。
@@ -123,7 +123,7 @@ MMDタブ - Import: ModelからさっそくMMDモデルを読み込んでみま�
 View: GLSLを押して色を出しておきます。
 </p>
 
-<img src="jojisi_mmd_input_3.png" width="960" height="500" />
+<img src="img/jojisi_mmd_input_3.png" width="960" height="500" />
 
 <h2>眺める</h2>
 <p>
@@ -148,7 +148,7 @@ View: GLSLを押して色を出しておきます。
 右クリックでキューブを選択、<b>[X]</b>を押します。
 </p>
 
-<img src="jojisi_mmd_delete_1.png" width="960" height="500" />
+<img src="img/jojisi_mmd_delete_1.png" width="960" height="500" />
 
 <p>
 すると、本当に消してもいいかツールチップが出るので、Deleteをクリックします。
@@ -164,13 +164,13 @@ Outliner - アリシア・ソリッド - アリシア・ソリッド_arm - ア�
 にあるので、順に選択していき、
 </p>
 
-<img src="jojisi_mmd_delete_2.png" width="960" height="500" />
+<img src="img/jojisi_mmd_delete_2.png" width="960" height="500" />
 
 <p>
 Propaties - Object - Layers から別のレイヤーを選択します。
 </p>
 
-<img src="jojisi_mmd_delete_3.png" width="960" height="500" />
+<img src="img/jojisi_mmd_delete_3.png" width="960" height="500" />
 
 <p>
 メッシュだけ別レイヤーに行きました。
@@ -178,7 +178,7 @@ Propaties - Object - Layers から別のレイヤーを選択します。
 メッシュとその他に分かれていることがわかります。
 </p>
 
-<img src="jojisi_mmd_layer.png" width="960" height="500" />
+<img src="img/jojisi_mmd_layer.png" width="960" height="500" />
 
 <p>
 Visible Layersを左上に戻して、<b>[A]</b>で全選択、<b>[X]</b>で削除します。
@@ -190,7 +190,7 @@ Visible Layersを左上に戻して、<b>[A]</b>で全選択、<b>[X]</b>で削�
 (通常、この作業をする必要があるのはncc_rootというオブジェクトだけです。もし他にも見えないオブジェクトが残っているなら、これまでのどこか(特にインポートの際のオプション)で間違っている可能性があります。)
 </p>
 
-<img src="jojisi_mmd_delete_ncc_root.png" width="960" height="500" />
+<img src="img/jojisi_mmd_delete_ncc_root.png" width="960" height="500" />
 
 <h2>表情/ポーズ差分を消す</h2>
 <p>
@@ -198,7 +198,7 @@ Visible Layersを左上に戻して、<b>[A]</b>で全選択、<b>[X]</b>で削�
 Propaties - Data - Shapesにある逆三角からDelete All Shapesを選びます。
 </p>
 
-<img src="jojisi_mmd_delete_shapes.png" width="960" height="500" />
+<img src="img/jojisi_mmd_delete_shapes.png" width="960" height="500" />
 
 <h1>テクスチャ設定をいじる</h1>
 
@@ -219,14 +219,14 @@ nif形式では、各Materialに1つのテクスチャをUV-map形式で貼り�
 作業を複数のTextureを持っている全Materialに対してぽちぽちとやっていきます。
 </p>
 
-<img src="jojisi_mmd_delete_texture.png" width="960" height="500" />
+<img src="img/jojisi_mmd_delete_texture.png" width="960" height="500" />
 
 <p>(全Materialについてぽちぽち中・・・)</p>
 
 <p>
 さらに各Materialの1番目のTextureに対してMapping - Map - UVMapを設定していきます。
 </p>
-<img src="jojisi_mmd_layer_uvmap.png" width="960" height="500" />
+<img src="img/jojisi_mmd_layer_uvmap.png" width="960" height="500" />
 
 <p>(全Materialについてぽちぽち中・・・)</p>
 
@@ -247,7 +247,7 @@ nif形式としてのバージョンを自己申告します。BtS用だと20.0.
 メニューからFile - Export - NetImmerse/Gavebryo(.nif)を選んで、
 </p>
 
-<img src="jojisi_mmd_output.png" width="960" height="500" />
+<img src="img/jojisi_mmd_output.png" width="960" height="500" />
 
 <p>
 オプションを
@@ -265,7 +265,7 @@ nif形式としてのバージョンを自己申告します。BtS用だと20.0.
 にして、いざ出力！
 </p>
 
-<img src="jojisi_mmd_output_options.png" width="300" height="368" />
+<img src="img/jojisi_mmd_output_options.png" width="300" height="368" />
 
 <p>
 うまくいっていると、マテリアルを統合したというWarningがたくさん出て、nifファイルができます。
@@ -275,14 +275,14 @@ nif形式としてのバージョンを自己申告します。BtS用だと20.0.
 <p>
 できたnifファイルをNifSkopeで開いてみます。
 </p>
-<img src="jojisi_mmd_nifskope_1.png" width="648" height="407" />
+<img src="img/jojisi_mmd_nifskope_1.png" width="648" height="407" />
 <p>
 はい。なにもありません。
 ・・・もとい見えてないだけです。
 階層をたどっていってNiMaterialProperty(パレットのアイコン)のところで、
 Alpha(不透明度)が「なぜか」0(完全透明)になっているので、1(完全不透明)に直します。
 </p>
-<img src="jojisi_mmd_nifskope_alpha.png" width="648" height="407" />
+<img src="img/jojisi_mmd_nifskope_alpha.png" width="648" height="407" />
 <p>
 見えました。必要なら他の各NiTriShapeでもNiMaterialProperty - Alphaの修正をしますが、
 この例のモデルではNiMaterialPropertyが統合されてしまっているので、１カ所修正しただけで上手く動くようです。
@@ -298,32 +298,32 @@ Alpha(不透明度)が「なぜか」0(完全透明)になっているので、1
 GIMPを使って、テクスチャ画像を.dds形式に変換していきます。
 .tgaファイルを開いて・・・ 
 </p>
-<img src="jojisi_mmd_gimp_open.png" width="453" height="382" />
+<img src="img/jojisi_mmd_gimp_open.png" width="453" height="382" />
 <p>
 128*128に縮小して・・・
 </p>
-<img src="jojisi_mmd_gimp_shrink.png" width="379" height="401" />
-<img src="jojisi_mmd_gimp_shrink2.png" width="221" height="185" />
+<img src="img/jojisi_mmd_gimp_shrink.png" width="379" height="401" />
+<img src="img/jojisi_mmd_gimp_shrink2.png" width="221" height="185" />
 <p>
 .ddsとして出力。
 </p>
-<img src="jojisi_mmd_gimp_output.png" width="320" height="326" />
-<img src="jojisi_mmd_gimp_output2.png" width="453" height="382" />
+<img src="img/jojisi_mmd_gimp_output.png" width="320" height="326" />
+<img src="img/jojisi_mmd_gimp_output2.png" width="453" height="382" />
 <p>
 これを、必要なファイルの分だけ繰り返します。(ぽちぽち・・・)
 先だってテクスチャを削ったので、全ての.tga画像が必要なわけではありません。
 NifSkope上でNodeを全部展開していくと、使われているファイル名がわかるので、使われているものだけでよいです。
 </p>
-<img src="jojisi_mmd_blocklist.png" width="483" height="705" />
+<img src="img/jojisi_mmd_blocklist.png" width="483" height="705" />
 <p>
 .ddsが全部できたら、修正保存しておいたnifを開き直してみると、色がついていることがわかります。
 </p>
-<img src="jojisi_mmd_nifskope_2.png" width="648" height="435" />
+<img src="img/jojisi_mmd_nifskope_2.png" width="648" height="435" />
 <h1>組み込む</h1>
 <p>
 お疲れ様でした！できたnifとddsをMODS\(MOD名)\assets\Art\Units\Alicia\にコピーして、
 </p>
-<img src="jojisi_mmd_mod_folder.png" width="499" height="332" />
+<img src="img/jojisi_mmd_mod_folder.png" width="499" height="332" />
 <p>
 Civ4ArtDefines_Unit.xmlの ART_DEF_UNIT_LION(ライオン以外の挙動は未調査)の&lt;NIF&gt;と&lt;SHADERNIF&gt;の両方を<br>
 Art/Units/alicia/alicia2.nifに変えると・・・
